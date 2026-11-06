@@ -36,6 +36,44 @@ body {
     justify-content: center;
 }
 
+.desktop-mockup.page-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.page-2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    z-index: 50;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.page-2-content .viewer-count {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    background: rgba(0, 0, 0, 0.4);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(8px);
+}
+
 .page {
     width: 50%;
     height: 100%;
@@ -554,12 +592,8 @@ body {
 }
 
 .music-player {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 50;
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     background: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 16px;
